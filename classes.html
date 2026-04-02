@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unique Computer Institution</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color: white;
+    }
+
+    header {
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    header p {
+        opacity: 0.8;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .card {
+        background: rgba(255,255,255,0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 20px;
+        width: 250px;
+        text-align: center;
+        transition: 0.4s;
+        animation: slideUp 1s ease;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px cyan;
+    }
+
+    .price {
+        font-size: 2em;
+        color: #00ffff;
+        margin: 10px 0;
+        animation: glow 2s infinite alternate;
+    }
+
+    .duration {
+        font-size: 0.9em;
+        opacity: 0.8;
+    }
+
+    footer {
+        text-align: center;
+        padding: 30px;
+        background: rgba(0,0,0,0.3);
+        margin-top: 20px;
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+    @keyframes slideUp {
+        from {transform: translateY(50px); opacity: 0;}
+        to {transform: translateY(0); opacity: 1;}
+    }
+
+    @keyframes glow {
+        from {text-shadow: 0 0 5px cyan;}
+        to {text-shadow: 0 0 20px cyan;}
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Unique Computer Institution</h1>
+    <p>Build Your Future with Skills 🚀</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Python</h2>
+        <div class="price">₹4500</div>
+        <div class="duration">Duration: 2-3 Months</div>
+    </div>
+
+    <div class="card">
+        <h2>Java</h2>
+        <div class="price">₹4500</div>
+        <div class="duration">Duration: 2-3 Months</div>
+    </div>
+
+    <div class="card">
+        <h2>App Development</h2>
+        <div class="price">₹8000</div>
+        <div class="duration">Duration: 3-4 Months</div>
+    </div>
+
+    <div class="card">
+        <h2>Tally</h2>
+        <div class="price">₹4000</div>
+        <div class="duration">Duration: 3 Months</div>
+    </div>
+
+    <div class="card">
+        <h2>English Speaking</h2>
+        <div class="price">₹4500</div>
+        <div class="duration">Duration: 3 Months</div>
+    </div>
+
+</div>
+
+<footer>
+    <p>📍 Shop-19, 2nd Floor, Kanha Plaza, Baghpat Rd</p>
+    <p>📞 9084610260 | 9458521247</p>
+</footer>
+
+</body>
+</html>
